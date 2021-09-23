@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - 02  intro</title>
+    <link rel="stylesheet" href="../css/01_01_introduction.css">
+    <!-- Script JS dans l'en-tête de la page -->
+    <!-- Mon code JS est ici placé dans l'en-tête, dans l'élément head de mon fichier, à l'intérieur de la balise script. Ce code récupère l'heure et l'actualise toutes les secondes et nous permet de l'afficher ou de la masquer via un bouton -->
+    <!-- JS !!!  ; ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
+</head>
+<body>
+        <!-- on peut mettre du JS directement dans l'élément HTML, dans la balise ouvrante -->
+        <!-- Ces deux scripts fonctionnent avec l'attribut onclick  -->
+        <h1>JavaScript - I/02 introduction</h1>
+        <!-- le 1er script affiche une alerte avec son message -->
+        <button class="bouton" onclick="alert('Coucou papillon !')">Cliquez sur moi !</button>
+        <!-- le second script ajoute un élément p dans la page -->
+        <button class="bouton" onclick="(function(){
+            let para = document.createElement('p');
+            para.textContent = 'Hop ! un nouveau paragraphe : c\'est drôle non ?';
+            document.body.appendChild(para); 
+        })();">
+            Ajoutez un paragraphe : allez !
+        </button>
+
+
+</body>
+</html>
