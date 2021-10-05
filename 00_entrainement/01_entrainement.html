@@ -33,7 +33,7 @@
 
         // confirm('Merci de confirmer, svp.');
 
-        // prompt('Comment allez vous?');
+        // ('promptComment allez vous?');
 
         // let humeur;
         // console.log(humeur);
@@ -45,10 +45,10 @@
 
         // Mini exo ; demandez à votre visiteur le prénom de sa maman
 
-        let nom;
-        console.log(nom);
-        nom = prompt('Comment sapelle votre maman');
-        document.write('<p>Le nom de votre maman ? : ' + nom + '</p>')
+        // let nom;
+        // console.log(nom);
+        // nom = prompt('Comment sapelle votre maman');
+        // document.write('<p>Le nom de votre maman ? : ' + nom + '</p>')
 
         // portée locale ou globale de la variable
         // humeur et prenomMaman ont des portées globales
@@ -77,9 +77,121 @@
         document.write ('<h2 style="background: orange;whith:50%; #fff;"> 1- TYPE DE DONNEE</h2>');
 
         var monTexte = 'Voici une phrase pour miredi avec une';
-        document.write ('<p> + monTexte + '</p>');
+        document.write ('<p> + monTexte + </p>');
         console.log(typeof(monTexte))
+
+        // 3- Constante
         
+        document.write('<h2 style="background:orange;width:50%;color:#fff;text-align: center;">3- CONSTANTES</h2>');
+
+        const neBougePas = 'Ma constante impossible à modifier !';
+        let meteo ='beau temps';
+
+        console.log(meteo);
+
+        meteo = 'mauvais temps';
+        console.log(meteo);
+
+        console.log(neBougePas);
+
+        // neBougePas ='coucou';
+
+        // min exo afficher avec docuement.write la phrase suivante avec un fond gris " la constante neBougePas contient "Ma constante impossible à modifier" !"
+
+        document.write('<p style="background: lightgrey; color: #fff;"> La constante neBougePas contient " + neBougePas contient"' + neBougePas + '"</p>');
+
+        // 4- CONCATENER
+        document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;">4- CONCATENER</h2>');
+
+        // MINI EXO 2 variable nom, prenom et affichez "The name is X, XX X."*
+
+        let firstName = 'Sleyter';
+        let lastName = 'Monteiro';
+
+        console.log(firstName, lastName);
+
+        document.write('<p> The name is ' + lastName + ', ' + firstName + ' ' + lastName + '.</p>');
+
+        // 5- OPERATEUR NUMERIQUE
+        document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;">4- OPERATEUR NUMERIQUE</h2>');
+
+        // Addition
+        let addition = 10 +5 ;
+        document.write('<p>Le résultat de l\'addition est ' + addition + '.</p>');
+        // exo affichez : le résultat d'une addition : 15</p>
+        
+        
+        // Multiplication
+        let multiplication = 10 * 5;
+        document.write('<p>Le résultat de la multiplication est ' + multiplication + '.</p>');
+        // exo affichez : le résultat d'une multiplication
+
+        // Soustraction
+        let soustraction = 10 - 5;
+        document.write('<p>Le résultat de la soustraction est ' + soustraction + '.</p>');
+        // exo affichez : le résultat d'une soustraction
+
+        // division
+        let division = 10 / 3;
+        document.write('<p>Le résultat de la division est ' + division + '.</p>');
+        // exo affichez : le résultat d'une division
+
+        // modulo
+        // exemple pour l'utilisation du modulo ; répondre à la question suivante : j'ai 10 billes je les partages entre 3 personnes il m'en reste combien 
+
+        let modulo = 10 % 3;
+
+        // console.log(modulo);
+        // exo affichez : le modulo de 10 % 3 est 1
+
+
+        document.write('<p> le modulo de de 10 % 3 est ' + modulo + '.</p>');
+
+        // EXO
+        document.write('<h3>Des exercices avec prompt() et alert()');
+
+        // CONSIGNE réaliser un prompt() demandant son âge à un utilisateur, récuperer cette donnée et l'utiliser pour afficher " vous avez XX ans"
+        
+        // let age;
+        // age = prompt('Quel age avez vous');
+        // console.log(age);
+        // document.write('<p>Mon âge c\'est  : ' + age + ' ans</p>');
+
+        // EXO
+        // Consigne
+        // 1- récupérer dans un prompt() une valeur numérique donnée par un utilisateur
+        // 2- ensuite envoyé une alert() indiquant le résultat de cette valeur au cube et au carré 
+        // 3- puis on fera un document white
+
+        let votreChiffre = prompt('Faisons des calculs : quel est votre chiffre ? ');
+        // console.log(votreChiffre);
+
+
+
+
+
+        let auCarre = votreChiffre * votreChiffre;
+        // console.log(auCarre)
+
+        let auCube = votreChiffre * votreChiffre * votreChiffre;
+        console.log(auCarre, auCube);
+
+        alert('Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au carré est égal à ' + auCarre + ' ce chiffre au cube est égal à ' + auCube);
+
+        document.write('<p>Vous avez saisi le chiffre : ' + votreChiffre + ' ce chiffre au carré est égal à ' + auCarre + ' ce chiffre au cube est égal à ' + auCube + '.</p>');
+
+
+
+
+
+
+
+
+
+
+
+
+        document.write('</main>')
     </script>
 </head>
 <body>
