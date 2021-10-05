@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- Boostrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>JavaScript - III/01 IF</title>   
+    <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+<body>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - III/04 - if <i class="bi bi-shield-fill"></i></h1>
+        <p class="lead">La condition if est la plus utilisé des conditions</p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="containerd p-4">
+        <section class="row mt-4">
+            <h2>if</h2>
+           <div class="col-sm-12 col-md-4">
+                <h3>1- if...</h3>
+                <p>La condition <code>if</code> est l'une des plus utilisée et est également la plus simple à apréhender puisqu'elle va nous permettre d'exécuter un bloc de code <em>si ET seulement si le résultat vaut <code>true</code>.</em></p>
+           </div>
+           <div class="col-xs 12 col-sm-6 col-md-4 col-lg-6 col-xxl-12 bg-success">
+               <p>Dans ces deux col nous avant les class suivantes <code>&lt;div class="col-xs 12 col-sm-6 col-md-4 col-lg-6 col-xxl-12"/div&gt;</code></p>
+           </div>
+            <div class="col-sm-12 col-md-4">
+                <h3>Attention ! : exceptions</h3>  
+                <p>Tout test d'une condition va être évalué dans contexte booléen ; donc à <code>false</code>.</p>
+                <ul>
+                    <li>La valeur <code>0</code> (zéro)</li>
+                    <li>le booléen <code>false</code></li>
+                    <li>Une chaîne de caractère vide</li>
+                    <li>la valeur <code>null</code></li>
+                    <li>la valeur <code>undefined</code></li>
+                    <li>la valeur <code>NaN</code> (Not a Number)</li>
+                </ul>      
+
+            </div>
+        </section>
+        <!-- fin rangée  -->
+
+        <section class="row">
+            <h2>2- Les littéraux de gabarits</h2>
+            <div class="col">
+                <p>Il faut toujours entourer nos littéraux entourer nos chaînes de caractères (nos textes) avec des apostrophe (des quotes ou simples quotes) ou des guillemets droits ou guillemets doubles.</p>
+            </div>
+            <div class="col">
+                <h3>concaténation habituelle</h3>
+                <p>Il faut toujours entourer nos chaînes de caractères (nos textes) avec des </p>
+            </div>
+            <div class="col">
+                <h3>3ème méthode ...</h3>
+                <p>Il existe une 3ème méthode, introduite plus récemment et qui utilis les accnts graves <kbd>Alt Gr + 7è</kbd>et le symbole $</p>
+                <p>ex: <code>`x contient ${x}`</code>est l'équivalent de <code>'x contient ' + x</code></p>
+            </div>
+
+        </section>
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+        <!-- Mes scripts JS en externe -->
+        <script src="if.js"></script>
+</body>
+</html>
