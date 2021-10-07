@@ -22,3 +22,16 @@ if(x == y) {
 if(y) {// 0 renvoi toujours false
     alert('4/ la valeur de y est évaluée à "true"')
 }
+
+
+
+// 6e
+// au lieu de verifier que le test est vrai on va verifier qu'il est faux
+if((x > 1) == false){
+    alert('7/ x et y ne contiennent pas la même valeur');
+}
+
+// 7e
+if((x == y) == false){
+    alert('7/ x et y ne contiennent pas la même valeur');
+}
