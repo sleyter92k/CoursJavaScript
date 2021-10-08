@@ -208,15 +208,77 @@
 
         // EXO tester si cette condition est remplie : a et b sont-ils égaux en valeur et en types ?
 
-        if ( a === b) {
-            document.write('<p> La valeur a est égal à b');
+        // if ( a === b) {
+        //     document.write('<p> La valeur a est égal à b');
+        // }else{
+
+        // }
+
+        //EXO tester la valeur de a par rapport au chiffre 5 ; inférieur ?égal?supérieur? ou alors c'est pas un nombre,dans une condition multiple (blocs de code> document.write)
+
+        console.log(a)
+        
+        if( a < 5 )  {
+           document.write('<p>la valeur de a est inférieure à 5</p>')                 
+        }else if (a == 5) {
+            document.write('<p>la valeur est égale à 5</p>');
+        }else if (a > 5) {
+            document.write('<p>la valeur de a est supérieure à 5</p>');
         }else{
+            document.write('<p>a qui contient : ' + a + 'n\'est pas un nombre</p>')
+        }   
+
+
+
+        // EXO a est-il supérieur b et b est t'il supérieur a if... else... 
+
+        if (' a > b && b > c') {
+            document.write('<p> la valeure a contient ' + a + ' est supérieur à b');
+        }else if ( b > c ) {
+            document.write('<p> la valeure b contient ' + b + ' est supérieur à c');
+        }
+
+        //EXO : a est supérieur à b OU b est supérieur à c
+        if(a > b || b > c){ 
+               document.write('<p>Pour a qui vaut ' + a +', b qui vaut '+ b +' et c qui vaut '+ c +' ici au moins une des deux conditions est vraie : (a > b OU b > c) </p>');
+         }else{
+               document.write('<p>Pour a qui vaut ' + a +', b qui vaut '+ b +' et c qui vaut '+ c +' dans ce cas aucune des conditions (a > b OU .b > c) n\' est vraie. </p>');
+         }
+
+        //  Récuperer dans une variable la réponse a la question suivante ; "parmi ces couleurs , le bleu, le rouge, le parme ; quelle est votre couleur préférée ?"
+        // suite 2-ensuite faites une conditions if... else, if... else pour afficher selon la réponse la couleur préférée de votre visiteur
+
+        let couleur = prompt('parmi ces couleurs , le céladon, le azur, le rouge cramoisi, le parme ; quelle est votre couleur préférée ? ') ;
+        console.log(couleur);
+
+        if (couleur == 'vert') {
+            code;
+        } else if ( couleur == 'azur') {
+
+        } else {
 
         }
 
-
-
-
+        switch (choixCouleur) {
+      
+      case ' le vert':
+      document.write('vous préfére   c\'est le vert  ');
+          break;
+      case 'le azur':
+      document.write('vous préfére   c\'est le azur ');
+          break;
+      case 'le bleu':
+      document.write('vous préfére   c\'est le bleu  ');
+          break;
+          case 'le parme':
+          document.write('vous préfére   c\'est  le parme  ');
+          break;
+     
+      default:
+      document.write( 'ah ! tien vous n\'aime pas les couleurs ni le vert ni le azur ni le bleu ni le parme');
+      break;
+  }
+        
 
 
 
