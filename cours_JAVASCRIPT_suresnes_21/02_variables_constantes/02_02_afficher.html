@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - II/02 affichage</title> 
+     <!-- Mes scripts JS en externe avec async = asynchrone avec avertissement-->
+     <!-- <script src="affichage.js" async></script> -->
+     <!-- avec deefer je n'ai pas d'avertissement  -->
+     <!-- <script src="affichage.js" defer></script> -->    
+
+    </head>
+
+<body>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4"><i class="bi bi-arrow-right-circle"></i> JavaScript - II/02 - affichage</h1>
+        <p class="lead">Comment afficher des variables</p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container">
+        <section class="row mt-4">
+            <div class="col-sm-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed architecto dolorem molestias impedit quasi commodi voluptas ratione. Deserunt nulla quam aliquam similique quisquam quibusdam voluptatibus, accusantium consectetur ipsum exercitationem!</p>
+            </div>
+        </section>
+        <!-- fin rangée  -->
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+        <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
+        <!-- la solution la plus utilisée -->
+        <script src="affichage.js"></script>
+</body>
+</html>
