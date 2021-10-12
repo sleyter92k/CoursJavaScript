@@ -48,4 +48,4 @@ do {// fait
     document.getElementById('dowhile1').innerHTML += ' do... while // w3 contient la valeur ' + w3 + '<br>';
     w3++;// incrémente
 }
-while ( w3 < 10);// tant que
+while ( w3 == 10);// tant que

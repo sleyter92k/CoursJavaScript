@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(202, 133, 191);
+}
+
+.conteneur {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.titre {
+    width: 70%;
+    margin: 0 auto;
+    background-color: powderblue;
+    text-align: center;
+    border-radius: 10px;
+}

@@ -310,6 +310,36 @@ prompt
     w1++// le contenu de la variable + 1
     }// Boucle stop     
 
+    // FOR EXO 1 
+    // pour une variable for1 inférieure ou égale à 10 bouclez et incrémentez
+
+    for (let for1 = 0; for1 <= 10; for1++) {
+        // console.log(for1);
+        document.write('for1 contient ' + for1 + ' à chaque tour de boucle.<br>');
+    }
+    
+    // EXO 2 boucle for 2 inférieureou égale à 10 bouclez et incrémentez
+
+    // suite exo 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là"
+
+    for (let for2 = 0; for2 <= 10; for2++) {
+        if (for2 == 10) {
+            document.write('et la boucle se termine là car for2 arrive à ' + for2);
+        } else {
+            document.write('for2 contient ' + for2 + '<br>');
+        }    
+    }// fin du for
+
+    for (let for3 = 0; for3 <= 10; for3++) {
+        if (for3 < 10) {
+            document.write('for3 contient ' + for3 + '<br>');
+        } else {
+            document.write('et la boucle se termine là car for3 arrive à ' + for3);
+        } // fin du else
+    }// fin du for
+
+
+
         document.write('</main>')
     </script>
 </head>
