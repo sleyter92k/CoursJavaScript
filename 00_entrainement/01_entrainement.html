@@ -338,6 +338,194 @@ prompt
         } // fin du else
     }// fin du for
 
+    // 8- FONCTIONS DE PREDEFINIE ET UTILISATEUR
+    document.write('<h2 style="margin:auto; background : orange,width: 80%; color: #fff;text-align: center;">8 - FONCTIONS PREDEFINIE ET UTILISATEUR</h2>');
+
+    var phrase1 = 'Vive les frites !';
+    var phrase2 = 'silence !!! svp';
+    console.log(phrase1,phrase2);
+
+    //toUpperCase()
+    console.log(phrase1. toUpperCase());
+
+    document.write('<p> Cette phrase en majuscule : ' + phrase1.toUpperCase() + '</p>');
+
+    document.write('<p> Cette phrase en majuscule : ' + phrase2.toUpperCase() + '</p>');
+
+    // une fonction prédéfinie TRES importante length
+    // cette fonction colpte les caractère d'une string les espaces et les lettres etc.
+    var phrase3 = 'The name is Bond, Jame Bond';
+
+    console.log(phrase3.length);
+
+    document.write('<p>Test ;  dans la phrase suivante ' + phrase3 + ' Il y a ' + phrase3.length + ' caractères.</p>');
+
+    function beauTemps() {
+        return document.write('<p>il fait beau</p>')
+    }
+    beauTemps();
+
+    function direBonjour(prenom) {
+        var message = document.write('<p> Bonjour ' + prenom + '. Comment vas-tu ?');
+            return message;
+    }
+    direBonjour('Toto');
+
+    function uneLigne() {
+        return document.write('<hr>');
+    }
+    uneLigne();
+    
+    // // prompt() et une fonction
+    // let prenom2 = prompt(' Quel est votre prénom ? ')
+    // console.log(prenom2);
+
+    // function direBonjour2(prénom2) {
+    //     return document.write('<p>Bonjour ' + prenom2 + '. Bienvenue sur notre site.' );
+    //         return message2;
+    // }
+    // direBonjour2(prenom2);
+
+    // EXO
+    // 1 demandez "quelle est la saison ?" et "Quelle est la température extérieur ?"
+
+    // 2 faite une fonction questionmeteo() qui renvoie les réponses à ces deux questions
+
+    // let saison = prompt('Quelle est la saison');
+    // let temperature = prompt('Quelle est la température extérieur ?');
+    // console.log(saison, temperature);
+
+    // function questionmeteo(saison, temperature) {
+    //     var message3 = document.write('<p> La saison : ' + saison + ' et il fait ' + temperature + ' °.</p>');
+    //     return message3;
+    // }
+    // questionmeteo(saison, temperature);
+
+    // // Le printemps, l'hiver, l'été l'automne
+
+    // // EXO
+    // // faites un if else avec deux types de phrases si c'est printemps = "nous sommes au printemps" si c'est l'une des 3 autres saison il faut écrire "nous sommes en"
+
+    // if (saison == 'printemps') { // si la variable contient bien en printemps ? est-vrai ?
+    //     document.write('nous sommes au  + saison + '); // bloc de code si c'est vrai
+    // } else {
+    //     document.write('nous sommes en  + saison + '); // sinon
+    // }
+
+    // // SUITE exo faire une fonction meteoIFSaison() avec deux 2 arguments et un if else dans la fonction
+
+    // function meteoIFSaison (saison, temperature) { // 2 arguments
+    //     // ATTENTION "let" a une portée local et "var" a une portée global
+    //     if (saison == 'printemps') {
+    //         var message4 = document.write('<p>nous sommes au ' + saison + ' et il fait ' + temperature + ' degrés. </p>');
+    //     } else {
+    //         var message4 = document.write('<p>nous sommes en ' + saison + ' et il fait ' + temperature + ' degrés. </p>');
+    //     }
+    //     return message4;
+    // }
+
+    // meteoIFSaison(saison, temperature);// fonction appellée et les 2 paramètres
+
+    // function meteoIFArticles (saison, temperature) {
+    //     var article;
+    //     if (saison == 'printemps') {
+    //         article = 'au';
+    //     } else {
+    //         article = 'en';
+    //     }
+    //     return document.write('<p>meteoIFArticle()//// Nous sommes ' + article + ' ' + saison + ' et il fait ' + temperature + ' degrés.</p>');
+    // }// fin fonction
+
+    // meteoIFArticles (saison, temperature);
+
+    // si l'utilisateur rentre autre chose que printemps été automne ou hiver 
+    //  avec un if else if on lui renvoie "une saison qui n'existe pas"
+    // function meteoIFElseIF(saison, temperature) {
+    // if (saison == 'printemps') { 
+    //      document.write('nous sommes au ' + saison + ' et la température est de ' + temperature + ' degrés.'); 
+    //  } else if ( saison == 'été' || saison == 'automne' || saison == 'hiver') {
+    //      var message5 = document.write('nous sommes en ' + saison + ' et la température est de ' + temperature + ' degrés.');
+    //  } else {
+    //      var message5 = document.write('cette saison : ' + saison + ' n\existe pas !!! Sauf sur Neptune !');
+    //  }
+    //  return message5;
+    // }
+     //meteoIFElseIF(saison, temperature);
+
+    //  function meteoFin(saison, temperature) {
+    //     var articles2;
+    //     if( saison == 'printemps' ) {
+    //         articles2 = 'au'
+    //     } else if ( saison == 'été' || saison == 'automne' || saison == 'hiver') {
+    //         articles2 = 'en';
+    //     } else {
+    //         return alert('cette saison : ' + saison + ' n\'existe pas !!!');
+    //     }// fin condition
+    //     return document.write('<p>6/ meteoFin()//// Nous sommes ' + articles2 + ' ' + saison + ' et il fait ' + temperature + ' degrés. </p>');
+
+     // fin fonction
+
+    // EXO 
+    // faire une fonction quelleEcole() 
+    // demandez à votre visiteur "quel âge à votre enfant ?" 
+    // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans our rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
+    
+
+    // let ageEnfant = prompt('quel âge à votre enfant ?');
+    // console.log(ageEnfant);
+
+    // function quelleEcole(ageEnfant) {
+    //     var article;
+    //     if( ageEnfant <= 6 ) {
+    //         var messageEcole = document.write('Votre enfant doit avoir plus de ' + ageEnfant + ' ans pour rentrer à l\'école<');
+    //     } else if ( ageEnfant >6) {
+    //         var messageEcole  =  document.write('Votre enfant doit avoir plus de ' + ageEnfant + ' ans pour rentrer à l\'école'); 
+    //     } else if ( ageEnfant >11) {
+    //         var messageEcole  =  document.write('Votre enfant doit avoir plus de ' + ageEnfant + ' ans pour rentrer à l\'école');
+    //     } else if ( ageEnfant >15) {
+    //         var messageEcole  =  document.write('Votre enfant doit avoir plus de ' + ageEnfant + ' ans pour rentrer à l\'école');
+    //     }
+    //     return messageEcole;
+    // } //fin function
+
+       
+    // quelleEcole();
+
+    let AgeEnfant = prompt('quel âge à votre enfant ?  ');
+    console.log(AgeEnfant );
+
+    function scolaire(AgeEnfant) {
+        if(AgeEnfant < 6) {
+            var Ecole =  document.write('<p>votre enfant doit avoir plus de 6 ans pour rentrer à l\'école</p>')
+        }else if( AgeEnfant == 6 ||AgeEnfant <= 11 ) {
+            document.write('<p>votre enfant va en primaire  car il a '+AgeEnfant+ ' ans</p>');
+        }else if( AgeEnfant == 11  ||AgeEnfant <= 15) {
+            var Ecole =  document.write('<p>votre enfant va au collège car il a '+AgeEnfant+ ' ans</p>');
+        }else if( AgeEnfant == 15||AgeEnfant <= 18 ) {
+            var Ecole =   document.write('<p>votre enfant doit aller au lycée car il a ' +AgeEnfant+ ' ans ' + '</p>');
+        }else {
+            var Ecole =   document.write('<p>votre enfant n\'est pas en âge scolaire car ila '+AgeEnfant+' ans </p>');
+         }
+         return Ecole;
+    }
+    scolaire(AgeEnfant);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         document.write('</main>')
