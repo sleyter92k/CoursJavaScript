@@ -494,21 +494,21 @@ prompt
     let AgeEnfant = prompt('quel âge à votre enfant ?  ');
     console.log(AgeEnfant );
 
-    function scolaire(AgeEnfant) {
+    function ecole(AgeEnfant) {
         if(AgeEnfant < 6) {
             var Ecole =  document.write('<p>votre enfant doit avoir plus de 6 ans pour rentrer à l\'école</p>')
-        }else if( AgeEnfant == 6 ||AgeEnfant <= 11 ) {
-            document.write('<p>votre enfant va en primaire  car il a '+AgeEnfant+ ' ans</p>');
-        }else if( AgeEnfant == 11  ||AgeEnfant <= 15) {
-            var Ecole =  document.write('<p>votre enfant va au collège car il a '+AgeEnfant+ ' ans</p>');
-        }else if( AgeEnfant == 15||AgeEnfant <= 18 ) {
-            var Ecole =   document.write('<p>votre enfant doit aller au lycée car il a ' +AgeEnfant+ ' ans ' + '</p>');
-        }else {
-            var Ecole =   document.write('<p>votre enfant n\'est pas en âge scolaire car ila '+AgeEnfant+' ans </p>');
+        }else if( AgeEnfant >= 6 || AgeEnfant < 11 ) {
+            document.write('<p>votre enfant va en primaire car il a ' + AgeEnfant + ' ans</p>');
+        }else if( AgeEnfant >= 11  || AgeEnfant < 15) {
+            var Ecole =  document.write('<p>votre enfant va au collège car il a ' + AgeEnfant + ' ans</p>');
+        }else if( AgeEnfant >= 15|| AgeEnfant < 18 ) {
+            var Ecole = document.write('<p>votre enfant doit aller au lycée car il a ' + AgeEnfant + ' ans ' + '</p>');
+        }else{
+            var Ecole = document.write('<p>votre enfant n\'est pas en âge scolaire car ila ' + AgeEnfant + ' ans </p>');
          }
          return Ecole;
     }
-    scolaire(AgeEnfant);
+    ecole(AgeEnfant);
 
 
 
