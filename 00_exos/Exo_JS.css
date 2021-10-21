@@ -1,24 +1,26 @@
 body {
     background-color: rgb(202, 133, 191);
-    margin: 0 auto;
 }
 
 .conteneur {
     background-color: #fff;
+    width: 80%;
     border-radius: 10px;
-    padding: px;
+    padding: 5px;
     margin: 0 auto;
     text-align: center;
 }
 
-.histoire {
+.titre {
     width: 70%;
     margin: 0 auto;
-    background-color: rgb(231, 228, 29);
+    background-color: powderblue;
     text-align: center;
     border-radius: 10px;
 }
 
-span {
-    color: yellow;
+.exo {
+    background-color: gold;
+    border-radius: 10px;
+    padding: 5px;
 }
