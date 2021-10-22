@@ -3,14 +3,14 @@
 // alert('coucou');
 
 for (let i = 0; i < 10; i++) { // (1- initialisation de la variable; -2 test ou condition de sortie; 3- incrémentation)
-    document.getElementById('p1').innerHTML += 'La variable i contient : ' + i + ' à chaque passage de la boucle<br>';
+    document.getElementById('').innerHTML += 'La variable i contient : ' + i + ' à chaque passage de la boucle<br>';
     console.info (typeof i, i);
 }
 
 // i = itérator = curseur
 
 for (let x = 0; x < 10; x++) { // (1- initialisation de la variable; -2 test ou condition de sortie; 3- incrémentation)
-    document.getElementById('tb1').innerHTML += '<tr><td>La variable x contient : ' + x + ' à chaque passage de la boucle</tr></td>';
+    document.getElementById('t').innerHTML += 'La variable x contient : ' + x + ' à chaque passage de la boucle<br>';
     console.info (typeof x, x);
 } 
 

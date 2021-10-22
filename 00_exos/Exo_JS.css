@@ -8,7 +8,6 @@ body {
     border-radius: 10px;
     padding: 5px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .titre {
@@ -20,7 +19,23 @@ body {
 }
 
 .exo {
-    background-color: gold;
+    background-color: rgb(226, 197, 30);
     border-radius: 10px;
     padding: 5px;
+}
+
+span {
+    color: rgb(231, 200, 25);
+}
+
+hr {
+    color: rgb(226, 196, 23);
+}
+
+ul {
+    text-align: left;
+}
+
+.resultat {
+    color: goldenrod;
 }
