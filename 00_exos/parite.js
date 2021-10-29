@@ -33,4 +33,17 @@ for (var i = 1; i<=10; i++) {
 }
 
 // exo 3 WHILE
-document.write('<p>*************** EXO 3 ***************</p>');
+document.write('<p>******** EXO 3 ***********</p>');
+
+var nbrUtilisateur2 = parseInt(prompt('Exo 3 : Rentrez un nombre entier, merci'));
+console.log(typeof nbrUtilisateurMax2, nbrUtilisateurMax2);
+
+var nbrUtilisateurMax2 = (nbrUtilisateur2 + 10);
+console.log(typeof nbrUtilisateurMax2, nbrUtilisateur2); 
+    // document.write('code');
+    // nbrUtilisateur2++;
+    if (nbrUtilisateur2 % 2 === 0) {
+        document.write('<p> ' + nbrUtilisateur2 + ' est pair.</p>');
+    } else {
+        document.write('<p> ' + nbrUtilisateur2 + ' est impair.</p>');
+    }

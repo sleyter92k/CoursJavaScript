@@ -1,8 +1,9 @@
-.ma-class {
-    background-color: blueviolet;
-    color: #fff;
-}
+#bouge {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
 
-#rouge {
-    background-color: red;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
 }
