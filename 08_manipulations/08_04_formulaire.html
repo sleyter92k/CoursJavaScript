@@ -19,7 +19,16 @@
     />
 
     <title>JavaScript - VIII/04 - Formulaires</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <style>
+      .error {
+        border: 2px solid red;
+      }
+
+      .valide {
+        border: 2px solid greenyellow;
+      }
+    </style>
   </head>
 
   <body>
@@ -85,13 +94,17 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="mdp2" class="form-label">Choississez un Mot de Passe *</label>
-                    <input type="password" class="form-control" id="mdp2" name="mdp2" placeholder="choississez un mot de passe" aria-describedby="mdp2">
+                    <label for="mdp2" class="form-label">Choisisez un Mot de Passe *</label>
+                    <input type="password" class="form-control" id="mdp2" name="mdp2" placeholder="choisisez un mot de passe" aria-describedby="mdp2">
+                    <button type="button" id="eye">
+                      <img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" />
+                  </button>
                 </div>
 
                 <div class="mb-3">
                     <label for="confmdp2" class="form-label">Retapez votre Mot de Passe *</label>
                     <input type="password" class="form-control" id="confmdp2" name="confmdp2" placeholder="retapez votre votre mot de passe" aria-describedby="confmdp2">
+                    
                 </div>
                 
                 <button type="submit2" value="inscription" class="btn btn-primary">Connexion</button>
