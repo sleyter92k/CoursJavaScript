@@ -6,7 +6,7 @@
             //event.preventDefault(); // pour empecher l'envoi du formulaire, à enlever quand le site est terminé
 
            if (document.form1.pseudo.value.length < 5 || document.form1.pseudo.value.length > 15 ) {
-               console.log(document.form1.pseudo.value);
+               console.log(document.form1.pseudo.value);    
                console.log(document.form1.pseudo.value.length);
                alert('Votre pseudo dois contenir entre 5 et 15 caractère');
            }
